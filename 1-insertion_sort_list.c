@@ -59,11 +59,6 @@ listint_t *temp1;
 listint_t *temp2;
 listint_t *current;
 listint_t *list_i = *list;
-if (!list_i->next)
-{
-print_list(*list);
-return;
-}
 list_i = list_i->next;
 while (list_i)
 {
