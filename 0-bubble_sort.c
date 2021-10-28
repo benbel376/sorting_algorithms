@@ -12,10 +12,10 @@ void bubble_sort(int *array, size_t size)
 {
 int temp = 0;
 long unsigned int counter = 0;
-  
+long unsigned int i;
 if (!array || size < 2)
 return;
-for (long unsigned int i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 {
 if ( i == (size - 1))
 {
