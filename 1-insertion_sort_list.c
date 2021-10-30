@@ -58,10 +58,6 @@ void insertion_sort_list(listint_t **list)
 listint_t *temp1;
 listint_t *temp2;
 listint_t *current;
-if (list == NULL)
-{
-return;
-}
 listint_t *list_i = *list;
 list_i = list_i->next;
 while (list_i)
