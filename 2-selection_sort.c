@@ -15,7 +15,6 @@ unsigned int j;
 
 for (i = 0; i < size; i++)
 {
-temp = array[i];
 for (j = i; j < size; j++)
 {
 if (array[i] > array[j])
