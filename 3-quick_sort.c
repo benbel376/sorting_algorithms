@@ -2,13 +2,13 @@
 
 
 /**
- * printS - swaps two integers in an array and prints the array
+ * swapnprint - swaps two integers in an array and prints the array
  * @a: first number
  * @b: second number
  * @array: the arry to be printed
  * @size: size of the array
  */
-void printS(int *a, int *b, int *array, size_t size)
+void swapnprint(int *a, int *b, int *array, size_t size)
 {
 	int tmp = *a;
 
@@ -36,7 +36,7 @@ void quick_sort_rec(int *array, size_t size, size_t beg, size_t end)
 	if (end == beg + 1)
 	{
 		if (array[beg] > array[end])
-			printS(array + beg, array + end, array, size);
+			swapnprint(array + beg, array + end, array, size);
 		return;
 	}
 	pivot = array[end];
@@ -45,11 +45,11 @@ void quick_sort_rec(int *array, size_t size, size_t beg, size_t end)
 		if (l >= r)
 		{
 			if (lfound)
-				printS(array + end, array + r, array, size), beg += 1;
+				swapnprint(array + end, array + r, array, size), beg += 1;
 			else if (rfound)
 				end -= 1;
 			else
-				printS(array + end, array + l, array, size);
+				swapnprint(array + end, array + l, array, size);
 			quick_sort_rec(array, size, beg, end);
 			break;
 		}
@@ -63,7 +63,7 @@ void quick_sort_rec(int *array, size_t size, size_t beg, size_t end)
 			r--;
 		if (lfound && rfound)
 		{
-			printS(array + l, array + r, array, size);
+			swapnprint(array + l, array + r, array, size);
 			lfound = false, rfound = false;
 		}
 	}
