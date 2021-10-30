@@ -1,6 +1,6 @@
 #include "sort.h"
 #include <stdlib.h>
-#include <studio.h>
+#include <stdio.h>
 /**
  * selection_sort - implementer function
  * @array: input array
@@ -22,7 +22,7 @@ if (array[i] > array[j])
 temp = array[i];
 array[i] = array[j];
 array[j] = temp;
-print_array(array);
+ print_array(array, size);
 }
 }
 }
